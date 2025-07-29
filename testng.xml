@@ -2,7 +2,6 @@
 <suite name="ParallelLoginSuite" parallel="tests" thread-count="2">
    <parameter name="browser" value="chrome"/>
   <test name="ChromeTests">
-    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.LoginTest"/>
     </classes>
