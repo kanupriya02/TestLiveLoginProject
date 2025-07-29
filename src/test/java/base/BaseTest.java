@@ -11,7 +11,7 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeClass
-    public void setup(@Optional("chrome")String browser) {
+    public void setup(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
